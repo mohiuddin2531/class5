@@ -59,35 +59,32 @@
 
 
 
+    <!-- route('customers.save') -->
 
-
-    <form action="" method="post">
+    <form action="{{url('/')}}/customer" method="post">
         @csrf 
 
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name">
+            <input type="text" class="form-control" id="name" autocomplete="off">
         </div>
 
         <div class="form-group">
             <label for="address">Address</label>
-            <input type="text" class="form-control" id="address">
+            <input type="text" class="form-control" id="address" autocomplete="off">
         </div>
 
         <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control" id="email" autocomplete="off">
         </div>
         
         <div class="form-group">
             <label for="contact">Contact No.</label>
-            <input type="text" class="form-control" id="email">
+            <input type="text" class="form-control" id="contact" autocomplete="off">
         </div>
 
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
